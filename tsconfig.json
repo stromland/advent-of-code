@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "build",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["types/*"]
+    },
+    "strict": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["**/*.test.ts", "build"]
+}
