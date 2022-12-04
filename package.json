@@ -5,7 +5,7 @@
   "author": "Espen Strømland",
   "license": "MIT",
   "scripts": {
-    "prestart": "run-s clean build",
+    "prestart": "run-s build",
     "start": "node ./build/main.js",
     "prebuild": "run-s -l clean lint",
     "build": "babel src --env-name build --out-dir build --extensions '.ts'",

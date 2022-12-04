@@ -13,7 +13,7 @@ async function main(): Promise<void> {
   }
   if (PART === '2') {
     const answer = part2(input);
-    console.log(`Answer: ${answer}`);
+    console.log({ answer });
   }
 }
 
