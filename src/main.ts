@@ -1,7 +1,6 @@
 import { readDayInput } from './utils/read-day-input';
-
 async function main(): Promise<void> {
-  const { YEAR, DAY, PART } = process.env;
+  const [, , YEAR, DAY, PART] = process.argv;
   console.log('Year: %d, Day: %d, Part: %d', YEAR, DAY, PART);
 
   const { part1, part2 } = await import(`./${YEAR}/day-${DAY}/day-${DAY}.js`);
@@ -9,7 +8,7 @@ async function main(): Promise<void> {
 
   if (PART === '1') {
     const answer = part1(input);
-    console.log(`Answer: ${answer}`);
+    console.log({ answer });
   }
   if (PART === '2') {
     const answer = part2(input);
