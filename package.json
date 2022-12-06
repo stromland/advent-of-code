@@ -7,6 +7,8 @@
   "scripts": {
     "prestart": "run-s build",
     "start": "node ./build/main.js",
+    "prebenchmark": "run-s build",
+    "benchmark": "node ./build/benchmark.js",
     "prebuild": "run-s -l clean lint",
     "build": "babel src --env-name build --out-dir build --extensions '.ts'",
     "build:watch": "npm run build -- --watch",
@@ -30,6 +32,7 @@
     "@types/node": "18.11.10",
     "@typescript-eslint/eslint-plugin": "5.45.0",
     "@typescript-eslint/parser": "5.45.0",
+    "benny": "3.7.1",
     "eslint": "8.29.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",

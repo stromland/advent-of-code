@@ -1,0 +1,27 @@
+{
+  "name": "2022-day-1",
+  "date": "2022-12-06T22:14:52.520Z",
+  "version": null,
+  "results": [
+    {
+      "name": "part1",
+      "ops": 479.2,
+      "margin": 0.13,
+      "percentSlower": 0
+    },
+    {
+      "name": "part2",
+      "ops": 478.6,
+      "margin": 0.17,
+      "percentSlower": 0.13
+    }
+  ],
+  "fastest": {
+    "name": "part1",
+    "index": 0
+  },
+  "slowest": {
+    "name": "part2",
+    "index": 1
+  }
+}
