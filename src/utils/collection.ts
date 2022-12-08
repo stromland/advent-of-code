@@ -33,3 +33,12 @@ export function sum<T>(
 ): number {
   return Array.from(arr).reduce((total, next) => total + fn(next), 0);
 }
+
+export function countTill<T>(arr: T[], predicate: (it: T) => boolean): number {
+  for (let i = 0; i < arr.length; i++) {
+    if (predicate(arr[i])) {
+      return i + 1;
+    }
+  }
+  return arr.length;
+}
