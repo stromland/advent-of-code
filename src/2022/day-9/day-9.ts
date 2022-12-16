@@ -1,3 +1,4 @@
+import { coerceIn } from '../../utils/math';
 import { positionToString } from './print-grid';
 
 export interface Position {
@@ -19,16 +20,6 @@ export function subtract(a: Position, b: Position): Position {
 
 export function distance(dx: number, dy: number): number {
   return Math.max(Math.abs(dx), Math.abs(dy));
-}
-
-function coerceIn(value: number, min: number, max: number): number {
-  if (value < min) {
-    return min;
-  }
-  if (value > max) {
-    return max;
-  }
-  return value;
 }
 
 function moveKnot(pos: Position, direction: Direction): Position {
